@@ -1,1 +1,46 @@
+<!doctype html>
+<html lang="fr">
 
+<head>
+	<link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+	<meta charset="utf-8">
+	<title>Color picker</title>
+</head>
+
+<body>
+	<div class=form>
+		<form method="POST">
+	    	<input class="champ" name="image_url" placeholder="Entrer l'URL d'une image...">
+	    	<input type="submit">
+	    </form>
+	</div>
+
+    <img src="{{image}}">
+
+	<div class=palette>
+		<div class=code>
+			<div style="background-color: rgb{{dominant}};" class="square"></div>
+			<p>{{dominant_hex}}</p>
+		</div>
+		<div class=code>
+			<div style="background-color: rgb{{palette[0]}};" class="square"></div>
+			<p>{{palette_hex[0]}}</p>
+		</div>
+		<div class=code>
+			<div style="background-color: rgb{{palette[1]}};" class="square"></div>
+			<p>{{palette_hex[1]}}</p>
+		</div>
+		<div class=code>
+			<div style="background-color: rgb{{palette[2]}};" class="square"></div>
+			<p>{{palette_hex[2]}}</p>
+		</div>
+		<div class=code>
+			<div style="background-color: rgb{{palette[3]}};" class="square"></div>
+			<p>{{palette_hex[3]}}</p>
+		</div>
+		<div class=code>
+			<div style="background-color: rgb{{palette[4]}};" class="square"></div>
+			<p>{{palette_hex[4]}}</p>
+		</div>
+	</div>
+</body>
