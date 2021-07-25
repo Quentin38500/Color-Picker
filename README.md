@@ -1,2 +1,7 @@
 # Color-Picker
-This project is a color palette creator from an image
+## Description
+This project is a color palette creator from an image.
+## Skills
+- Python
+    - Flask microframework
+    - colorthief library
